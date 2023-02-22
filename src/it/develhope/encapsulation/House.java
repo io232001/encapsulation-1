@@ -2,27 +2,26 @@ package it.develhope.encapsulation;
 
 public class House
 {
-    public int floorNumbers;
-    public String address;
-    public void setAddress(String address)
-    {
-        this.address=address;
-        address="Via Rivalta 12";
+    private int floorsNumber;
+    private String address;
+    private String residentsNames;
+    public void setFloorsNumber(int floorsNumber) {
+        this.floorsNumber = floorsNumber;
     }
-    public void setFloorNumbers(int floorNumbers)
-    {
-        this.floorNumbers=floorNumbers;
+    public int getFloorsNumber() {
+        return floorsNumber;
     }
-    public void residentNames(String array, String jhon, String lucy, String peter)
-    {
-        residentNames("paul","Jhon","Lucy","Larry");
+    public void setAddress(String address) {
+        this.address = address;
     }
-    public int getFloorNumbers()
-    {
-        return floorNumbers;
-    }
-    public String getAddress()
-    {
+    public String getAddress() {
         return address;
     }
+    public void setResidentsNames(String residentsNames) {
+        this.residentsNames = residentsNames;
+    }
+    public String getResidentsNames() {
+        return residentsNames;
+    }
+
 }
